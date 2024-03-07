@@ -83,3 +83,59 @@ nav ul {
   margin: 0 20vw;
   font-size: xx-large;
 }
+
+#second-page {
+  height: 90vh;
+}
+#plans {
+  display: flex;
+  margin: 0 10vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 100px;
+}
+
+.free {
+  color: lightgreen;
+}
+
+.premium {
+  color: gold;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex: 0 0 300px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.plan h3 {
+  margin: 0;
+  font-size: x-large;
+  text-align: center;
+}
+
+.plan-feature {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  gap: 10px;
+}
+
+.plan-feature p {
+  margin: 5px;
+}
+
+.plan ul {
+  margin: 0;
+}
+.price {
+  font-size: larger;
+  text-align: center;
+  margin: 0;
+}
