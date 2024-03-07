@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth; /* Doesn't work when in body for some reason */
+}
 body {
   box-sizing: border-box;
   margin: 0;
@@ -86,6 +89,9 @@ nav ul {
 
 #second-page {
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 #plans {
   display: flex;
@@ -138,4 +144,43 @@ nav ul {
   font-size: larger;
   text-align: center;
   margin: 0;
+}
+
+#order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#order h2 {
+  font-size: xxx-large;
+  margin: 0;
+}
+
+#order p {
+  font-size: x-large;
+  width: 50vw;
+  text-align: center;
+}
+
+.button {
+  /*https://www.bestcssbuttongenerator.com*/
+  background-color: #0b162c;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 16px 76px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #2f6627;
+}
+.button:hover {
+  background-color: #1c2942;
+}
+.button:active {
+  position: relative;
+  top: 1px;
 }
