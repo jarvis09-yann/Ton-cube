@@ -256,6 +256,7 @@ footer p {
     hsl(89deg 47% 40%) 100%
   );
   animation: spin 20s linear infinite;
+  opacity: 0.8;
   filter: blur(70px);
 }
 
