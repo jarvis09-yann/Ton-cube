@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth; /* Doesn't work when in body for some reason */
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #0b162c;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b162c;
+  padding: 10px 50px;
+}
+
+#navbar-title {
+  margin: 0;
+  margin-right: auto;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav ul {
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  font-size: larger;
+}
+#title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: xxx-large;
+}
+
+#title img {
+  width: 128px;
+  border: 3px solid #ffffff;
+  border-radius: 100px;
+}
+
+#title-container h2 {
+  text-align: center;
+  margin: 0 20vw;
+  font-size: xx-large;
+}
+
+#plans {
+  display: flex;
+  margin: 10vh 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.free {
+  color: #5fc2ba;
+}
+
+.premium {
+  color: #f6b12d;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex: 0 0 300px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.plan h3 {
+  margin: 0;
+  font-size: x-large;
+  text-align: center;
+}
+
+.plan-feature {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  gap: 10px;
+}
+
+.plan-feature p {
+  margin: 5px;
+}
+
+.plan ul {
+  margin: 0;
+}
+.price {
+  font-size: larger;
+  text-align: center;
+  margin: 0;
+}
+
+#order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#order h2 {
+  font-size: xxx-large;
+  margin: 0;
+}
+
+#order p {
+  font-size: x-large;
+  width: 50vw;
+  text-align: center;
+}
+
+.button {
+  /*https://www.bestcssbuttongenerator.com*/
+  background-color: #0b162c;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 16px 76px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #2f6627;
+}
+.button:hover {
+  background-color: #1c2942;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh 0;
+}
+
+#about h2 {
+  font-size: xxx-large;
+  margin: 0;
+}
+#about p {
+  width: 50vw;
+  text-align: center;
+  font-size: x-large;
+}
+
+footer {
+  color: darkgray;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  font-size: large;
+  margin: 0;
+  line-height: 20px;
+}
