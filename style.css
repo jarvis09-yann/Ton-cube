@@ -118,6 +118,10 @@ nav ul {
   border: 1px solid #ffffff;
   padding: 10px;
   border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .plan h3 {
@@ -172,7 +176,6 @@ nav ul {
 }
 .button {
   /*https://www.bestcssbuttongenerator.com*/
-  background-color: #0b162c23;
   border: 1px solid #ffffff;
   border-radius: 12px;
   cursor: pointer;
@@ -181,7 +184,10 @@ nav ul {
   font-weight: bold;
   padding: 16px 76px;
   text-decoration: none;
-  text-shadow: 0px 0px 0px #2f6627;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .button:hover {
   background-color: #1c294258;
@@ -237,36 +243,17 @@ footer p {
   z-index: 1 !important;
   height: 60%;
   width: 40%;
-  border-radius: 80% 40% 80% 40%;
+  border-radius: 80% 70% 80% 40%;
   /*https://www.joshwcomeau.com/gradient-generator*/
   background-image: linear-gradient(
     45deg,
     hsl(175deg 45% 57%) 0%,
-    hsl(173deg 45% 56%) 5%,
-    hsl(171deg 44% 55%) 10%,
-    hsl(170deg 44% 54%) 14%,
-    hsl(167deg 43% 53%) 19%,
-    hsl(165deg 43% 52%) 24%,
-    hsl(163deg 42% 52%) 29%,
-    hsl(160deg 41% 51%) 33%,
-    hsl(158deg 40% 51%) 38%,
-    hsl(155deg 39% 50%) 43%,
-    hsl(151deg 37% 50%) 48%,
-    hsl(147deg 36% 50%) 52%,
-    hsl(143deg 35% 50%) 57%,
-    hsl(138deg 34% 49%) 62%,
-    hsl(133deg 32% 49%) 67%,
-    hsl(126deg 30% 49%) 71%,
-    hsl(119deg 29% 49%) 76%,
-    hsl(112deg 32% 47%) 81%,
-    hsl(105deg 35% 45%) 86%,
-    hsl(99deg 38% 43%) 90%,
-    hsl(94deg 42% 42%) 95%,
-    hsl(89deg 47% 40%) 100%
+    hsl(102deg 44% 61%) 50%,
+    hsl(39deg 92% 57%) 100%
   );
-  animation: spin 20s linear infinite;
+  animation: spin 40px linear infinite;
   opacity: 0.8;
-  filter: blur(70px);
+  filter: blur(100px);
 }
 
 @keyframes spin {
