@@ -11,6 +11,9 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+* {
+  position: relative;
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -29,6 +32,7 @@ a:hover {
 }
 
 nav {
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,14 +40,18 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0b162c;
-  padding: 10px 50px;
+  /* background-color: #0b162c; */
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 5px 50px;
+  flex-wrap: wrap;
 }
 
 #navbar-title {
   margin: 0;
   margin-right: auto;
-  font-size: xx-large;
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -57,8 +65,9 @@ nav ul {
   margin: 0;
   display: flex;
   gap: 30px;
-  font-size: larger;
+  font-size: 24px;
 }
+
 #title-container {
   display: flex;
   align-items: center;
@@ -72,7 +81,7 @@ nav ul {
   gap: 20px;
   align-items: center;
   flex-wrap: wrap;
-  font-size: xxx-large;
+  font-size: 70px;
 }
 
 #title img {
@@ -84,12 +93,13 @@ nav ul {
 #title-container h2 {
   text-align: center;
   margin: 0 20vw;
-  font-size: xx-large;
+  font-size: 42px;
 }
 
 #plans {
   display: flex;
-  margin: 10vh 0;
+  padding: 10vh 0;
+  margin: 0;
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
@@ -111,18 +121,22 @@ nav ul {
   border: 1px solid #ffffff;
   padding: 10px;
   border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .plan h3 {
   margin: 0;
-  font-size: x-large;
+  font-size: 30px;
   text-align: center;
 }
 
 .plan-feature {
   display: flex;
   align-items: center;
-  font-size: larger;
+  font-size: 18px;
   gap: 10px;
 }
 
@@ -134,7 +148,7 @@ nav ul {
   margin: 0;
 }
 .price {
-  font-size: larger;
+  font-size: 26px;
   text-align: center;
   margin: 0;
 }
@@ -147,31 +161,39 @@ nav ul {
 }
 
 #order h2 {
-  font-size: xxx-large;
+  font-size: 48px;
   margin: 0;
 }
 
 #order p {
-  font-size: x-large;
+  font-size: 28px;
   width: 50vw;
   text-align: center;
 }
 
+#buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 50px 0 0 0;
+}
 .button {
   /*https://www.bestcssbuttongenerator.com*/
-  background-color: #0b162c;
   border: 1px solid #ffffff;
   border-radius: 12px;
   cursor: pointer;
   color: #ffffff;
-  font-size: xx-large;
+  font-size: 32px;
   font-weight: bold;
   padding: 16px 76px;
   text-decoration: none;
-  text-shadow: 0px 0px 0px #2f6627;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .button:hover {
-  background-color: #1c2942;
+  background-color: #1c294258;
 }
 .button:active {
   position: relative;
@@ -186,13 +208,13 @@ nav ul {
 }
 
 #about h2 {
-  font-size: xxx-large;
+  font-size: 48px;
   margin: 0;
 }
 #about p {
   width: 50vw;
   text-align: center;
-  font-size: x-large;
+  font-size: 24px;
 }
 
 footer {
@@ -204,7 +226,44 @@ footer {
 }
 
 footer p {
-  font-size: large;
+  font-size: 20px;
   margin: 0;
   line-height: 20px;
+}
+
+#blob-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#blob {
+  z-index: 1 !important;
+  height: 80%;
+  width: 50%;
+  border-radius: 80% 70% 80% 40%;
+  /*https://www.joshwcomeau.com/gradient-generator*/
+  background-image: linear-gradient(
+    45deg,
+    hsl(175deg 45% 57%) 0%,
+    hsl(107deg 68% 57%) 50%,
+    hsl(39deg 92% 57%) 100%
+  );
+  animation: spin 20s linear infinite;
+  opacity: 0.8;
+  filter: blur(150px);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
