@@ -114,6 +114,10 @@ nav ul {
   color: #f6b12d;
 }
 
+.ultra {
+  color: #f33f3f;
+}
+
 .plan {
   display: flex;
   flex-direction: column;
