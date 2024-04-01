@@ -55,5 +55,16 @@
 }
 
 #infobox h1 {
-  font-size: 48px;
+  font-size: 32px;
+  font-style: italic;
+}
+
+#infobox a {
+  margin-top: 20px;
+}
+
+#button-alternate {
+  padding: 4px;
+  display: flex;
+  justify-content: center;
 }
