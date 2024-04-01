@@ -1,0 +1,59 @@
+#plans {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex: 0 0 300px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.plan-feature {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.plan-feature p {
+  margin: 5px;
+}
+
+.plan ul {
+  margin: 0;
+}
+.price {
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+}
+
+#infobox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#infobox h1 {
+  font-size: 48px;
+}
