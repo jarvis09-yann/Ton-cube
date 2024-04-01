@@ -227,43 +227,6 @@ footer p {
   line-height: 20px;
 }
 
-#blob-container {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#blob {
-  z-index: 1 !important;
-  height: 80%;
-  width: 50%;
-  border-radius: 80% 70% 80% 40%;
-  /*https://www.joshwcomeau.com/gradient-generator*/
-  background-image: linear-gradient(
-    45deg,
-    hsl(175deg 45% 57%) 0%,
-    hsl(107deg 68% 57%) 50%,
-    hsl(39deg 92% 57%) 100%
-  );
-  animation: spin 20s linear infinite;
-  opacity: 0.8;
-  filter: blur(150px);
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 #alternate-title {
   display: none;
 }
