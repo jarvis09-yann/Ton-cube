@@ -90,10 +90,11 @@ a:hover {
 }
 .button:hover {
   background-color: #1c294258;
+  translate: 0 1px;
 }
 .button:active {
   position: relative;
-  top: 1px;
+  top: 3px;
 }
 
 footer {

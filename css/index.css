@@ -241,9 +241,19 @@ img {
 .plan-image {
   width: 140px;
   padding: 15px;
-  overflow: visible; /* Image's corners*/
+  overflow: visible; /*show image's corners */
 }
 
 .plan-link {
   text-decoration: none;
+  transition: transform 0.2s; /* smoothen the translation */
+}
+
+.plan-link:hover {
+  /* translate: 0 1px; */
+  transform: scale(1.05);
+}
+
+.plan-link:active {
+  transform: scale(1.3);
 }
