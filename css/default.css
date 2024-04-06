@@ -151,3 +151,35 @@ nav ul {
   gap: 30px;
   font-size: 24px;
 }
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  /* Navbar */
+  nav {
+    padding: 5px 20px;
+  }
+
+  #navbar-title {
+    font-size: 24px;
+  }
+
+  nav ul {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .button {
+    padding: 12px 36px;
+    font-size: 24px;
+  }
+  /* Footer */
+  footer p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+#email {
+  margin: 0 !important;
+}
