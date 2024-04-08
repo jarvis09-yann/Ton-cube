@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /css
+Disallow: /assets
+Disallow: /README.md
+Disallow: /oembed.json
+Disallow: /*.js

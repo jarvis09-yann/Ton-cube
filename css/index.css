@@ -19,56 +19,6 @@ body {
   display: none;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  color: #ffffff;
-}
-
-a:hover {
-  color: lightgray;
-}
-
-nav {
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* background-color: #0b162c; */
-  background: rgba(255, 255, 255, 0.02);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  padding: 5px 50px;
-  flex-wrap: wrap;
-}
-
-#navbar-title {
-  margin: 0;
-  margin-right: auto;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-nav a {
-  text-decoration: none;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-nav ul {
-  margin: 0;
-  display: flex;
-  gap: 30px;
-  font-size: 24px;
-  padding: 0;
-}
-
 #title-container {
   display: flex;
   align-items: center;
@@ -85,10 +35,11 @@ nav ul {
   font-size: 70px;
 }
 
-#title img {
+img {
   width: 128px;
+  padding: 5px;
   border: 3px solid #ffffff;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 #title-container h2 {
@@ -106,7 +57,7 @@ nav ul {
   gap: 100px;
 }
 
-.free {
+.lite {
   color: #5fc2ba;
 }
 
@@ -121,8 +72,6 @@ nav ul {
 .plan {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  flex: 0 0 300px;
   border: 1px solid #ffffff;
   padding: 10px;
   border-radius: 20px;
@@ -130,6 +79,11 @@ nav ul {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.plan:hover {
+  background: rgba(255, 255, 255, 0);
 }
 
 .plan h3 {
@@ -138,20 +92,6 @@ nav ul {
   text-align: center;
 }
 
-.plan-feature {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  gap: 10px;
-}
-
-.plan-feature p {
-  margin: 5px;
-}
-
-.plan ul {
-  margin: 0;
-}
 .price {
   font-size: 26px;
   text-align: center;
@@ -180,29 +120,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  margin: 50px 0 0 0;
-}
-.button {
-  /*https://www.bestcssbuttongenerator.com*/
-  border: 1px solid #ffffff;
-  border-radius: 12px;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 32px;
-  font-weight: bold;
-  padding: 16px 76px;
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.04);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-.button:hover {
-  background-color: #1c294258;
-}
-.button:active {
-  position: relative;
-  top: 1px;
+  margin: 0;
 }
 
 #about {
@@ -223,76 +141,12 @@ nav ul {
   font-size: 24px;
 }
 
-footer {
-  color: darkgray;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-footer p {
-  font-size: 20px;
-  margin: 0;
-  line-height: 20px;
-}
-
-#blob-container {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#blob {
-  z-index: 1 !important;
-  height: 80%;
-  width: 50%;
-  border-radius: 80% 70% 80% 40%;
-  /*https://www.joshwcomeau.com/gradient-generator*/
-  background-image: linear-gradient(
-    45deg,
-    hsl(175deg 45% 57%) 0%,
-    hsl(107deg 68% 57%) 50%,
-    hsl(39deg 92% 57%) 100%
-  );
-  animation: spin 20s linear infinite;
-  opacity: 0.8;
-  filter: blur(150px);
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 #alternate-title {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   /* Adjustments for smaller screens */
-
-  /* Navbar */
-  nav {
-    padding: 5px 20px;
-  }
-
-  #navbar-title {
-    font-size: 24px;
-  }
-
-  nav ul {
-    font-size: 18px;
-  }
 
   /* Title */
   #title {
@@ -323,11 +177,7 @@ footer p {
   .plan {
     flex: 0 0 calc(100% - 40px);
     margin-bottom: 40px;
-  }
-
-  .button {
-    padding: 12px 36px;
-    font-size: 24px;
+    width: 90vw;
   }
 
   /* Order */
@@ -355,10 +205,32 @@ footer p {
     width: 80vw;
     font-size: 18px;
   }
+}
 
-  /* Footer */
-  footer p {
-    font-size: 16px;
-    line-height: 16px;
-  }
+.plan-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-image {
+  width: 140px;
+  padding: 15px;
+  overflow: visible; /*show image's corners */
+}
+
+.plan-link {
+  text-decoration: none;
+  transition: transform 0.2s; /* smoothen the translation */
+}
+
+.plan-link:hover {
+  /* translate: 0 1px; */
+  transform: scale(1.05);
+}
+
+.plan-link:active {
+  transform: scale(1.3);
 }
