@@ -234,3 +234,10 @@ img {
 .plan-link:active {
   transform: scale(1.3);
 }
+
+.name-gradient {
+  background: linear-gradient(#f6b12d, #f33f3f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
