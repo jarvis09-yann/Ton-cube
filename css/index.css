@@ -236,7 +236,7 @@ img {
 }
 
 .name-gradient {
-  background: linear-gradient(#f6b12d, #f33f3f);
+  background: linear-gradient(#da6d00, #f6b12d);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
