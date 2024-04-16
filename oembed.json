@@ -1,9 +1,9 @@
 {
   "author_url": "https://toncube.net",
-  "provider_name": "",
-  "provider_url": "",
+  "provider_name": "TonCube",
+  "provider_url": "https://toncube.net",
   "title": "Hébergement ",
   "type": "link",
   "version": "1.0",
-  "thumbnail_url": "./assets/logo-128px.png"
+  "thumbnail_url": "https://toncube.net/assets/logo-128px.png"
 }
