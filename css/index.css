@@ -1,11 +1,8 @@
-/* Prefixed by https://autoprefixer.github.io */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   scroll-behavior: smooth; /* Doesn't work when in body for some reason */
 }
 body {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   background-color: #0b162c;
@@ -23,31 +20,17 @@ body {
 }
 
 #title-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
 }
 
 #title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 70px;
 }
@@ -66,15 +49,10 @@ img {
 }
 
 #plans {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 10vh 0;
   margin: 0;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   gap: 100px;
 }
@@ -92,12 +70,7 @@ img {
 }
 
 .plan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   border: 1px solid #ffffff;
   padding: 10px;
@@ -105,7 +78,6 @@ img {
   background: rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -127,18 +99,9 @@ img {
 }
 
 #order {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -154,25 +117,15 @@ img {
 }
 
 #buttons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 50px;
   margin: 0;
 }
 
 #about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   margin: 10vh 0;
@@ -222,8 +175,6 @@ img {
   }
 
   .plan {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(100% - 40px);
     flex: 0 0 calc(100% - 40px);
     margin-bottom: 40px;
     width: 90vw;
@@ -241,9 +192,6 @@ img {
   }
 
   #buttons-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
     margin: 20px 0 0 0;
@@ -262,14 +210,8 @@ img {
 .plan-image-container {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -281,23 +223,15 @@ img {
 
 .plan-link {
   text-decoration: none;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s; /* smoothen the translation */
+  transition: transform 0.2s; /* smoothen the translation */
 }
 
 .plan-link:hover {
   /* translate: 0 1px; */
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 .plan-link:active {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
   transform: scale(1.3);
 }
 
@@ -321,10 +255,23 @@ img {
       #d22e8c 100%
     );
   background-size: 200% 200%;
+  -webkit-animation: moveAndChangeGradient 4s infinite;
   animation: moveAndChangeGradient 4s infinite;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+@-webkit-keyframes moveAndChangeGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes moveAndChangeGradient {
