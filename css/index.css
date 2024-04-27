@@ -301,17 +301,40 @@ img {
   transform: scale(1.3);
 }
 
-.name-gradient {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#da6d00),
-    to(#f6b12d)
-  );
-  background: -o-linear-gradient(#da6d00, #f6b12d);
-  background: linear-gradient(#da6d00, #f6b12d);
-  background-clip: text;
+#name-gradient {
+  background-image: linear-gradient(
+      163deg,
+      #4964da 0%,
+      rgba(146, 73, 221, 0.8) 11.8%,
+      rgba(176, 60, 196, 0.6) 23.6%,
+      rgba(192, 55, 173, 0.4) 35.4%,
+      rgba(217, 46, 116, 0) 59%
+    ),
+    radial-gradient(
+      100% 100% at 10% 100%,
+      #fdd575 0%,
+      #fcc06a 14.29%,
+      #fbaa63 28.57%,
+      #f99262 42.86%,
+      #f77868 57.14%,
+      #f55973 71.43%,
+      #d22e8c 100%
+    );
+  background-size: 200% 200%;
+  animation: moveAndChangeGradient 4s infinite;
+  color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes moveAndChangeGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
