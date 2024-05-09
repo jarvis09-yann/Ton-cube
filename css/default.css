@@ -40,6 +40,14 @@ a:hover {
   color: #f33f3f;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
 #blob-container {
   z-index: -1;
   display: inline-flex;

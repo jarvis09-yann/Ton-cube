@@ -69,6 +69,7 @@ img {
   color: #f33f3f;
 }
 
+.caroussel-item,
 .plan {
   display: flex;
   flex-direction: column;
@@ -79,6 +80,8 @@ img {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.plan {
   cursor: pointer;
 }
 
@@ -123,7 +126,7 @@ img {
   margin: 0;
 }
 
-#about {
+#advantages {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,11 +134,11 @@ img {
   margin: 10vh 0;
 }
 
-#about h2 {
+#advantages h2 {
   font-size: 48px;
   margin: 0;
 }
-#about p {
+#advantages p {
   width: 50vw;
   text-align: center;
   font-size: 24px;
@@ -197,11 +200,11 @@ img {
     margin: 20px 0 0 0;
   }
 
-  #about h2 {
+  #advantages h2 {
     font-size: 36px;
   }
 
-  #about p {
+  #advantages p {
     width: 80vw;
     font-size: 18px;
   }
@@ -284,4 +287,26 @@ img {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.caroussel-item {
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caroussel-item h3 {
+  margin: 0;
+  font-size: 32px;
+}
+.caroussel-item p {
+  margin: 0;
+  font-size: 14px !important;
+}
+
+.glide * {
+  /* Center middle slide */
+  margin: 0 auto;
 }
