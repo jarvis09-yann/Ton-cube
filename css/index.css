@@ -69,7 +69,7 @@ img {
   color: #f33f3f;
 }
 
-.caroussel-item,
+.carousel-item,
 .plan {
   display: flex;
   flex-direction: column;
@@ -289,7 +289,7 @@ img {
   }
 }
 
-.caroussel-item {
+.carousel-item {
   width: 256px;
   display: flex;
   flex-direction: column;
@@ -297,11 +297,11 @@ img {
   align-items: center;
 }
 
-.caroussel-item h3 {
+.carousel-item h3 {
   margin: 0;
   font-size: 32px;
 }
-.caroussel-item p {
+.carousel-item p {
   margin: 0;
   font-size: 14px !important;
 }
