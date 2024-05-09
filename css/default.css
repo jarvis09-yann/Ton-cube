@@ -100,6 +100,8 @@ a:hover {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex; /* Center text and icon*/
+  align-items: center;
 }
 .button:hover {
   background-color: #1c294258;

@@ -44,6 +44,10 @@
 .plan ul {
   margin: 0;
 }
+
+.plan p {
+  margin-left: 0;
+}
 .price {
   font-size: 26px;
   text-align: center;
