@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /css
 Disallow: /assets
+Disallow: /legal
 Disallow: /README.md
 Disallow: /oembed.json
 Disallow: /*.js
